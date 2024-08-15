@@ -12,7 +12,7 @@ export class NotificationService {
   });
 
   private backupTransporter = nodemailer.createTransport({
-    service: 'Outlook',
+    service: 'Gmail',
     auth: {
       user: process.env.BACKUP_EMAIL,
       pass: process.env.BACKUP_PASSWORD,
